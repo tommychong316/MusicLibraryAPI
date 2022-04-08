@@ -36,7 +36,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'songs'
+    'songs',
 ]
 
 MIDDLEWARE = [
@@ -66,7 +66,9 @@ TEMPLATES = [
         },
     },
 ]
-
+REST_FRAMEWORK = {
+    'COERCE_DECIMAL_TO_STRING': False
+}
 WSGI_APPLICATION = 'music_library_project.wsgi.application'
 
 

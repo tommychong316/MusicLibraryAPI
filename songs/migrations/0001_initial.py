@@ -19,6 +19,7 @@ class Migration(migrations.Migration):
                 ('artist', models.CharField(max_length=255)),
                 ('album', models.CharField(max_length=255)),
                 ('genre', models.CharField(max_length=255)),
+                ('release_date', models.DateField()),
             ],
         ),
     ]
